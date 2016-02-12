@@ -1,6 +1,6 @@
 html {
     /* sets background image to be fixed, centered, full-page, and proportional to original image */
-    background: url("https://s3.amazonaws.com/kpomes/media/detroit/detroit6.jpg") no-repeat center center fixed;
+    background: url("https://s3-us-west-2.amazonaws.com/laurag/media/pomes/nyc4.JPG") no-repeat center center fixed;
     background-size: cover;
 
     /*This section adds a fading effect when new bg images are introduced.*/
@@ -12,8 +12,9 @@ html {
 body {
     padding: 0;
     margin: 0;
-    font-family: helvetica, sans-serif;
+    font-family: 'Merriweather', sans-serif;
     font-size: 18px;
+    line-height: 1.5;
 }
 #content {
     /*Sets and centers backdrop of central pome listing*/
@@ -39,20 +40,20 @@ body {
 }
 h1 {
     /*Trip titles*/
-    font-family: 'Arvo';
+    font-family: 'Oswald';
     font-size: 44px;
     font-weight: normal;
     padding: 80px 0 0 0;
 }
 h2 {
     /*Poem titles*/  
-    font-family: 'Arvo';
+    font-family: 'Oswald';
     font-size: 28px;
     margin: 0;
     padding: 45px 0 0 0;
 }
 a {
-    font-family: 'Arvo';
+    font-family: 'Oswald';
     text-decoration: none;
     color: black;
     font-weight: normal;
@@ -75,7 +76,7 @@ audio, img {
     border-radius:10px;
     background-color:white;
     cursor:pointer;
-    font-family: 'Arvo', Georgia, serif;
+    font-family: 'Oswald', Georgia, serif;
     z-index:100;
 }
 #map-canvas {
@@ -88,7 +89,7 @@ audio, img {
     position: relative;
 }
 .site-title {
-    font-family: 'Arvo', Georgia, serif;
+    font-family: 'Oswald', Georgia, serif;
     font-weight: normal;
     margin: 0;
     padding: 0;
@@ -112,6 +113,7 @@ audio, img {
 #site-title-pt2 {
     font-size: 80px;
     text-indent: 290px;
+    line-height: .5;
 }
 /**************************************Pertaining to the alt, camera-based splash page*/
 #alt-splash {
@@ -190,7 +192,7 @@ ul#nav {
     float: left;
     
     /*Set width of navbar items to be 100% width/# of li's - left-right padding btw li's*/
-    width: calc(100%/6 - 10px);
+    width: calc(100%/5 - 10px);
     padding: 5px;
     text-align: center;
     background-color: #FFFFFF;

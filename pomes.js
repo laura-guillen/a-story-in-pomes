@@ -42,18 +42,18 @@ function initialize() {
     var markers = [];
     // items added to this list will be added to the navigation map at the top of the site
     markers[0] = new google.maps.Marker({
-        position: new google.maps.LatLng(42.333172, -83.044960),
+        position: new google.maps.LatLng(42.360722, -71.056182),
         map: map,
         icon: icon,
-        title: 'Detroit, MI',
-        url: '#detroit'
+        title: 'Boston, MA',
+        url: '#boston'
     });
     markers[1] = new google.maps.Marker({
-        position: new google.maps.LatLng(38.004111, -80.944114),
+        position: new google.maps.LatLng(40.712598, -73.991772),
         map: map,
         icon: icon,
-        title: 'Clifftop, WV',
-        url: '#clifftop'
+        title: 'New York City, NY',
+        url: '#nyc'
     });
     markers[2] = new google.maps.Marker({
         position: new google.maps.LatLng(34.056915, -118.248311),
@@ -63,11 +63,11 @@ function initialize() {
         url: '#la'
     });
     markers[3] = new google.maps.Marker({
-        position: new google.maps.LatLng(28.539998, -81.370123),
+        position: new google.maps.LatLng(24.555247, -81.779747),
         icon: icon,
         map: map,
-        title: 'Orlando, FL',
-        url: '#orlando'
+        title: 'Key West, FL',
+        url: '#key-west'
     });
 
     // turns each map marker into a link
@@ -83,49 +83,37 @@ google.maps.event.addDomListener(window, 'load', initialize);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 var html = document.getElementsByTagName('html')[0];
-var media_path_base = 'https://s3.amazonaws.com/kpomes/'
+var media_path_base = 'https://s3-us-west-2.amazonaws.com/laurag/'
 
 
-var detroit_bgimgs = ['media/detroit/detroit3.jpg', 
-                        'media/detroit/detroit5.jpg', 
-                        'media/detroit/detroit6.jpg', 
-                        'media/detroit/detroit7.jpg', 
-                        'media/detroit/detroit9.jpg', 
-                        'media/detroit/detroit10.jpg'
+var boston_bgimgs = ['media/pomes/boston1.JPG', 
+                        'media/pomes/boston2.JPG', 
+                        'media/pomes/boston3.JPG', 
+                        'media/pomes/boston4.JPG', 
+                        'media/pomes/boston5.JPG', 
+                        'media/pomes/boston6.jpg'
                         ];
-var clifftop_bgimgs = ['media/clifftop/clifftop2.jpg', 
-                        'media/clifftop/clifftop3.jpg', 
-                        'media/clifftop/clifftop4.jpg', 
-                        'media/clifftop/clifftop5.jpg', 
-                        'media/clifftop/clifftop12.jpg'
+var nyc_bgimgs = ['media/pomes/nyc1.JPG', 
+                        'media/pomes/nyc2.JPG', 
+                        'media/pomes/nyc3.JPG', 
+                        'media/pomes/nyc4.JPG'    
                         ];
-var la_bgimgs = ['media/la/la1.jpg', 
-                        'media/la/la4.jpg', 
-                        'media/la/la5.jpg', 
-                        'media/la/la6.jpg', 
-                        'media/la/la7.jpg'
+var keywest_bgimgs = ['media/pomes/key-west1.JPG', 
+                        'media/pomes/key-west2.JPG', 
+                        'media/pomes/clifftop/key-west3.JPG' 
                         ];
-var orlando_bgimgs = ['media/orlando/orlando1.jpg', 
-                        'media/orlando/orlando2.jpg', 
-                        'media/orlando/orlando4.jpg', 
-                        'media/orlando/orlando6.jpg', 
-                        'media/orlando/orlando7.jpg'    
+var la_bgimgs = ['media/pomes/los-angeles1.JPG', 
+                        'media/pomes/los-angeles2.JPG', 
+                        'media/pomes/los-angeles3.JPG', 
+                        'media/pomes/los-angeles4.JPG', 
+                        'media/pomes/los-angeles5.JPG',
+                        'media/pomes/los-angeles6.JPG'
                         ];
 
-var sng_bgimgs = ['media/sng/sng1.JPG', 
-                        'media/sng/sng2.JPG',
-                        'media/sng/sng3.JPG',  
-                        'media/sng/sng4.JPG', 
-                        'media/sng/sng5.JPG', 
-                        'media/sng/sng6.JPG', 
-                        'media/sng/sng7.JPG'    
-                        ];
-
-var bgimgs = {"detroit":detroit_bgimgs.map(function(currentValue) {return media_path_base+currentValue;}), 
-                "clifftop":clifftop_bgimgs.map(function(currentValue) {return media_path_base+currentValue;}), 
+var bgimgs = {"boston":boston_bgimgs.map(function(currentValue) {return media_path_base+currentValue;}), 
+                "nyc":nyc_bgimgs.map(function(currentValue) {return media_path_base+currentValue;}), 
                 "la":la_bgimgs.map(function(currentValue) {return media_path_base+currentValue;}), 
-                "orlando":orlando_bgimgs.map(function(currentValue) {return media_path_base+currentValue;}),
-                "sng":sng_bgimgs.map(function(currentValue) {return media_path_base+currentValue;})
+                "key-west":keywest_bgimgs.map(function(currentValue) {return media_path_base+currentValue;})
 
             };
 
